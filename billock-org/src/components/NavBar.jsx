@@ -7,7 +7,7 @@ export default class NavBar extends Component {
       
       <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Billock.org</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,10 +29,7 @@ export default class NavBar extends Component {
                 <a class="nav-link" href="https://www.billock.org/#connor">Connor</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="https://www.billock.org/#house">HJouse</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link disabled" href="https://www.billock.org/#house">House</a>
               </li>
             </ul>
           </div>
