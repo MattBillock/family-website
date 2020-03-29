@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import PersonalInfo from 'components/people/PersonalInfo'
-import HobbyInfo from 'components/people/HobbyInfo'
-import Resume from 'components/people/Resume'
+import PersonalInfo from './PersonalInfo'
+import HobbyInfo from './HobbyInfo'
+import Resume from './Resume'
 
 export default class Matt extends Component {
   render() {
     return (
       <div>
+        <a href="#" onClick={() => {this.hidden = !(this.hidden)}}> Show </a>
         <PersonalInfo />
         <HobbyInfo />
         <Resume />
