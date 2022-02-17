@@ -9,9 +9,9 @@ with:
   # FTP host
   host: evilstickman.com
   # FTP user
-  user: 
+  user: ${{ secrets.FTP_USER }}
   # FTP password
-  password: 
+  password:  ${{ secrets.FTP_PASSWORD }}
   # Force SSL encryption
   forceSsl: # optional, default is false
   # Local directory
