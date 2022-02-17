@@ -39,11 +39,15 @@
     {
       "type": "node",
       "request": "launch",
+      "program": "serve -s ${workspaceFolder}\\build",
       "name": "Launch Program",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}\\start"
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
     }
   ]
 }
