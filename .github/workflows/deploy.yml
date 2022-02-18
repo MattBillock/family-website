@@ -8,17 +8,18 @@ jobs:
       - name: Get latest code
         uses: actions/checkout@v2
       - name: Sync Files
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+
+        uses: Creepios/sftp-action@v1.0.3
         with:
           # FTP host
-          server: home98969401.1and1-data.host
-
+          host: home98969401.1and1-data.host
+          port: 22
           # FTP user
           username: ${{ secrets.FTP_USER }}
           # FTP password
           password:  ${{ secrets.FTP_PASSWORD }}
           # Local directory
-          local-dir: ./billock-org/public/
+          localPath: ./billock-org/public/
           # Remote directory
-          server-dir: billock/matt/
+          remotePath: ./billock/matt/
           log-level: verbose
