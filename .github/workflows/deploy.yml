@@ -19,4 +19,4 @@ jobs:
           # Local directory
           local-dir: /billock-org/public
           # Remote directory
-          server=dir: /billock/matt
+          server-dir: /billock/matt
