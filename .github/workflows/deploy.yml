@@ -13,7 +13,7 @@ jobs:
           # FTP host
           server: home98969401.1and1-data.host
           port: 990
-          protocol: ftps-legacy
+          protocol: ftp
           # FTP user
           username: ${{ secrets.FTP_USER }}
           # FTP password
@@ -22,3 +22,4 @@ jobs:
           local-dir: ./billock-org/public/
           # Remote directory
           server-dir: billock/matt/
+          log-level: verbose
