@@ -19,7 +19,7 @@ jobs:
           # FTP password
           password:  ${{ secrets.FTP_PASSWORD }}
           # Local directory
-          localPath: ./billock-org/public/
+          localPath: ./billock-org/build/
           # Remote directory
           remotePath: ./billock/
           log-level: verbose
