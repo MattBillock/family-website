@@ -13,7 +13,7 @@ jobs:
           # FTP host
           server: home98969401.1and1-data.host
           port: 990
-          protocol: sftp
+          protocol: ftps-legacy
           # FTP user
           username: ${{ secrets.FTP_USER }}
           # FTP password
