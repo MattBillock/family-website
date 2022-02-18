@@ -1,20 +1,21 @@
 name: ftp-action
-uses: sebastianpopp/ftp-action@v2.0.0
 on:
   push:
     branches:
       - main
   workflow_dispatch:
-with:
-  # FTP host
-  host: evilstickman.com
-  # FTP user
-  user: ${{ secrets.FTP_USER }}
-  # FTP password
-  password:  ${{ secrets.FTP_PASSWORD }}
-  # Force SSL encryption
-  forceSsl: # optional, default is false
-  # Local directory
-  localDir: /billock-org/public
-  # Remote directory
-  remoteDir: /billock/matt
+jobs:
+  deploy_to_staging:
+    name: Deploy to staging
+    uses: SamKirkland/FTP-Deploy-Action@4.2.0
+    with:
+      # FTP host
+      server: evilstickman.com
+      # FTP user
+      username: ${{ secrets.FTP_USER }}
+      # FTP password
+      password:  ${{ secrets.FTP_PASSWORD }}
+      # Local directory
+      local-dir: /billock-org/public
+      # Remote directory
+      server=dir: /billock/matt
