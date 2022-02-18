@@ -13,9 +13,9 @@ jobs:
           # FTP host
           server: evilstickman.com
           # FTP user
-          username: ${{ secrets.production.FTP_USER }}
+          username: ${{ secrets.FTP_USER }}``
           # FTP password
-          password:  ${{ secrets.production.FTP_PASSWORD }}
+          password:  ${{ secrets.FTP_PASSWORD }}
           # Local directory
           local-dir: /billock-org/public
           # Remote directory
