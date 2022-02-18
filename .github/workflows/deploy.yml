@@ -13,7 +13,7 @@ jobs:
           # FTP host
           server: home98969401.1and1-data.hostevilstickman.com
           port: 990
-          use_ssl: true
+          protocol: ftps
           # FTP user
           username: ${{ secrets.FTP_USER }}
           # FTP password
@@ -21,4 +21,4 @@ jobs:
           # Local directory
           local-dir: ./billock-org/public/
           # Remote directory
-          server-dir: /billock/matt/
+          server-dir: billock/matt/
