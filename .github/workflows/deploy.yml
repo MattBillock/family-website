@@ -13,10 +13,10 @@ jobs:
           # FTP host
           server: evilstickman.com
           # FTP user
-          username: ${{ secrets.ftp_user }}
+          username: ${{ secrets.FTP_USER }}
           # FTP password
-          password:  ${{ secrets.ftp_password }}
+          password:  ${{ secrets.FTP_PASSWORD }}
           # Local directory
-          local-dir: /billock-org/public
+          local-dir: /billock-org/public/
           # Remote directory
-          server-dir: /billock/matt
+          server-dir: /billock/matt/
