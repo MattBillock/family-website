@@ -17,6 +17,6 @@ jobs:
           # FTP password
           password:  ${{ secrets.FTP_PASSWORD }}
           # Local directory
-          local-dir: /billock-org/public/
+          local-dir: ./billock-org/public/
           # Remote directory
           server-dir: /billock/matt/
