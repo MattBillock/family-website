@@ -1,6 +1,5 @@
 name: ftp-action
 on: push
-  workflow_dispatch:
 jobs:
   deploy_to_staging:
     name: Deploy to staging
