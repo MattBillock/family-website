@@ -13,7 +13,7 @@ jobs:
           # FTP host
           server: evilstickman.com
           # FTP user
-          username: ${{ secrets.FTP_USER }}``
+          username: ${{ secrets.FTP_USER }}
           # FTP password
           password:  ${{ secrets.FTP_PASSWORD }}
           # Local directory
