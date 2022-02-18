@@ -1,0 +1,21 @@
+name: ftp-action
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  deploy_to_staging:
+    name: Deploy to staging
+    uses: SamKirkland/FTP-Deploy-Action@4.2.0
+    with:
+      # FTP host
+      server: evilstickman.com
+      # FTP user
+      username: ${{ secrets.FTP_USER }}
+      # FTP password
+      password:  ${{ secrets.FTP_PASSWORD }}
+      # Local directory
+      local-dir: /billock-org/public
+      # Remote directory
+      server=dir: /billock/matt
