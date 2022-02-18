@@ -1,5 +1,5 @@
 name: ftp-action
-on: pull_request_target
+on: push
 jobs:
   web-deploy:
     name: Deploy
