@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Link
 } from 'react-router-dom'
@@ -46,23 +46,23 @@ export default class NavBar extends Component {
               </ul>
             </div>
           </nav>
-          <Switch>
+          <Routes>
             <Route path="/">
               <Home />
             </Route>
-            <Route path="/matt">
+            <Route path="matt.billock.org">
               <Matt />
             </Route>
-            <Route path="/kiley">
+            <Route path="kiley.billock.org">
               <Kiley />
             </Route>
-            <Route path="/luella">
+            <Route path="luella.billock.org">
               <Luella />
             </Route>
-            <Route path="/connor">
+            <Route path="connor.billock.org">
               <Connor />
             </Route>
-          </Switch>
+          </Routes>
         </div>
       </Router>
     )
