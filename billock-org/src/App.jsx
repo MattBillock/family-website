@@ -27,7 +27,7 @@ export default class App extends Component {
             </header>
 
             <footer id="footer">
-              <span className="copyright">&copy; 2020 Sparrow Court Consulting</span>
+              <span className="copyright">&copy; 2021 Sparrow Court Consulting</span>
             </footer>
           </div>
         </div>
