@@ -1,4 +1,4 @@
-import NavBar from './components/NavBar';
+import FamilyNavBar from './components/FamilyNavBar';
 import { Component, default as React } from 'react';
 import './App.css';
 import './main.css';
@@ -22,7 +22,7 @@ export default class App extends Component {
               <span><em>Est. 2012</em></span>
 
               <div align='center'>
-                <NavBar />
+                <FamilyNavBar />
               </div>                
             </header>
 
