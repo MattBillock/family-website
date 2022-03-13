@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import FamilyNavBar from '../FamilyNavBar'
 
 export default class Connor extends Component {
   render() {
@@ -6,6 +7,7 @@ export default class Connor extends Component {
 
       <div>
         <h1>Coming soon!</h1>
+        <FamilyNavBar />
       </div>
     )
   }

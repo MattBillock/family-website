@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import FamilyNavBar from '../FamilyNavBar'
 
 
 export default class Luella extends Component {
@@ -6,6 +7,7 @@ export default class Luella extends Component {
     return (
       <div>
         <h1>Coming soon!</h1>
+        <FamilyNavBar />
       </div>
     )
   }
