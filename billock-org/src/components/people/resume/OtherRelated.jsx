@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {v4 as uuidv4} from 'uuid'
 export default class OtherRelated extends Component {
   getData() {
     return [
@@ -61,10 +61,10 @@ export default class OtherRelated extends Component {
   }
   render() {
     const item_list = this.getData().map((item) => 
-      <li>
+      <li key={uuidv4()}>
         {item['data']}
         <ul>
-          {item['children'].map((child) => <li>{child}</li>)}
+          {item['children'].map((child) => <li key={uuidv4()}>{child}</li>)}
         </ul>
       </li>
     )

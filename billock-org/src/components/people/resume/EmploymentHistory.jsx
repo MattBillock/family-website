@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import {v4 as uuidv4} from 'uuid'
 
 export default class EmploymentHistory extends Component {
   getData() {
     return ([
       {
+        'key':uuidv4(),
         'start-date': 'June 2021',
         'end-date': undefined,
         'title': 'Staff Software Development Engineer',
@@ -19,6 +21,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         'start-date': 'September 2019',
         'end-date': 'June 2021',
         'title': 'Staff Software Engineer',
@@ -37,6 +40,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "May 2019",
         "end-date": "September 2019",
         "title": "Senior Software Engineer",
@@ -49,6 +53,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "October 2017",
         "end-date": "May 2019",
         "title": "Chapter Manager, Platform",
@@ -65,6 +70,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "January 2017",
         "end-date": "October 2017",
         "title": "Director of Product Management",
@@ -80,6 +86,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "March 2015",
         "end-date": "January 2017",
         "title": "Principal Software Engineer",
@@ -98,6 +105,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "December 2013",
         "end-date": "March 2015",
         "title": "Senior Software Engineer",
@@ -112,6 +120,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "August 2012",
         "end-date": "December 2013",
         "title": "Senior Software Engineer",
@@ -128,6 +137,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "August 2011",
         "end-date": "August 2012",
         "title": "Software Engineer",
@@ -142,6 +152,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "March 2010",
         "end-date": "August 2011",
         "title": "Senior Gaming Software Engineer",
@@ -157,6 +168,7 @@ export default class EmploymentHistory extends Component {
 
       },
       {
+        'key':uuidv4(),
         "start-date": "August 2009",
         "end-date": "March 2010",
         "title": "Engineer",
@@ -168,6 +180,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "February 2009",
         "end-date": "August 2009",
         "title": "Software Engineer",
@@ -181,6 +194,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "August 2007",
         "end-date": "January 2009",
         "title": "Graphics Programmer",
@@ -193,6 +207,7 @@ export default class EmploymentHistory extends Component {
         ]
       },
       {
+        'key':uuidv4(),
         "start-date": "May 2006",
         "end-date": "August 2007",
         "title": "Gaming Software Engineer",
@@ -201,6 +216,7 @@ export default class EmploymentHistory extends Component {
         "responsibilities": []
       },
       {
+        'key':uuidv4(),
         "start-date": "August 2004",
         "end-date": "May 2006",
         "title": "Application Developer Specialist",
@@ -212,7 +228,7 @@ export default class EmploymentHistory extends Component {
   }
   render() {
     var employment_list = this.getData().map( (item) => 
-      <div>
+      <div key={uuidv4()}>
         <div>
           <span className="datespan">{item['start-date']}-{item['end-date'] === undefined ? 'Present' : item['end-date']}</span>
           &nbsp;&nbsp;&nbsp;&nbsp;
@@ -223,7 +239,7 @@ export default class EmploymentHistory extends Component {
         </div>
         <div>
           <ul>
-            {item['responsibilities'].map((sub_item) => <li>{sub_item}</li>)}
+            {item['responsibilities'].map((sub_item) => <li key={uuidv4()}>{sub_item}</li>)}
           </ul>
         </div>
       </div>

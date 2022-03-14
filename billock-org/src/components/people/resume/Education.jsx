@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import {v4 as uuidv4} from 'uuid'
+
 
 export default class Education extends Component {
   getData() {
@@ -23,7 +25,7 @@ export default class Education extends Component {
   }
   render() {
     var education_list = this.getData().map( (item) => 
-      <li>
+      <li key={uuidv4()}>
         <div>
           <div><span className="degree">{item['degree']}</span> - <span className="major">{item['major']}</span></div>
           <div><span className='school'>{item['school']}</span>, <span className='city'>{item['city']}</span></div>

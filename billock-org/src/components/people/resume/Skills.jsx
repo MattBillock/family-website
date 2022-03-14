@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {v4 as uuidv4} from 'uuid'
 
 export default class Skills extends Component {
   getData() {
@@ -27,7 +28,7 @@ export default class Skills extends Component {
   }
   render() {
     var skills_list = this.getData().map((item => 
-      <li>
+      <li key={uuidv4()}>
         {item['skill']} - {item['years']} years
       </li>
     ))
