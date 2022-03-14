@@ -18,11 +18,11 @@ export default class FamilyNavBar extends Component {
     return (
     <div className='navbar-position'>
         <Menu classNam>
-            <a id="home" className="menu-item" href="/"><img className='circleimagerot' src='images/tenor-horn.jpg' /></a>
-            <a href="/matt" className="menu-item"><img className="circleimage" src="images/matt.jpg" alt="Matt" /></a>
-            <a href="/kiley" className="menu-item"><img className="circleimagerot" src="images/kiley.jpg" alt="Kiley" /></a>
-            <a href="/luella" className="menu-item"><img className="circleimage" src="images/luella.jpg" alt="Luella" /></a>
-            <a href="/connor" className="menu-item"><img className="circleimage" src="images/connor.jpg" alt="Connor" /></a>
+            <a id="home" className="menu-item" href="/"><img className='circleimagerot' src={require('../images/tenor-horn.jpg')} /></a>
+            <a href="/matt" className="menu-item"><img className="circleimage" src={require("../images/matt.jpg")} alt="Matt" /></a>
+            <a href="/kiley" className="menu-item"><img className="circleimagerot" src={require("../images/kiley.jpg")} alt="Kiley" /></a>
+            <a href="/luella" className="menu-item"><img className="circleimage" src={require("../images/luella.jpg")} alt="Luella" /></a>
+            <a href="/connor" className="menu-item"><img className="circleimage" src={require("../images/connor.jpg")} alt="Connor" /></a> 
         </Menu>
     </div>
     )
