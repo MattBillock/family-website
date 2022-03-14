@@ -1,8 +1,7 @@
 
 import React, { Component } from 'react'
 import FamilyNavBar from './FamilyNavBar';
-import './Home.css';
-import '../main.css';
+import '../stylesheets/home.sass'
 
 export default class Home extends Component {
   render() {
@@ -10,14 +9,14 @@ export default class Home extends Component {
       <div className='bg'>
         <div className="is-preload">
           <div id="main">
-
-            <header id="header">
-              <div align='center'>
-                <FamilyNavBar />
-              </div>
-            </header>
-
+            <div>
+              <FamilyNavBar />
             </div>
+            <div className='page-title'>
+              <h1>The Billock Family</h1>
+              <span><h3><em>Est. 2012</em></h3></span>
+            </div>
+          </div>
         </div>
       </div>
     )

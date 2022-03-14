@@ -9,9 +9,11 @@
     "bootstrap": "",
     "react": "",
     "react-bootstrap": "",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "",
     "react-router-dom": "",
-    "react-scripts": ""
+    "react-scripts": "",
+    "sass": "^1.49.9"
   },
   "scripts": {
     "start": "react-scripts start",
