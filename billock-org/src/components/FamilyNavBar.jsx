@@ -2,7 +2,8 @@ import React, { Component, useState } from 'react'
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Link
 } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -17,12 +18,12 @@ export default class FamilyNavBar extends Component {
   render() {
     return (
     <div className='navbar-position'>
-        <Menu classNam>
-            <a id="home" className="menu-item" href="/"><img className='circleimagerot' src={require('../images/tenor-horn.jpg')} /></a>
-            <a href="/matt" className="menu-item"><img className="circleimage" src={require("../images/matt.jpg")} alt="Matt" /></a>
-            <a href="/kiley" className="menu-item"><img className="circleimagerot" src={require("../images/kiley.jpg")} alt="Kiley" /></a>
-            <a href="/luella" className="menu-item"><img className="circleimage" src={require("../images/luella.jpg")} alt="Luella" /></a>
-            <a href="/connor" className="menu-item"><img className="circleimage" src={require("../images/connor.jpg")} alt="Connor" /></a> 
+        <Menu>
+            <Link id="home" className="menu-item" to="/"><img className='circleimagerot' src={require('../images/tenor-horn.jpg')} /></Link>
+            <Link to="/matt" className="menu-item"><img className="circleimage" src={require("../images/matt.jpg")} alt="Matt" /></Link>
+            <Link to="/kiley" className="menu-item"><img className="circleimagerot" src={require("../images/kiley.jpg")} alt="Kiley" /></Link>
+            <Link to="/luella" className="menu-item"><img className="circleimage" src={require("../images/luella.jpg")} alt="Luella" /></Link>
+            <Link to="/connor" className="menu-item"><img className="circleimage" src={require("../images/connor.jpg")} alt="Connor" /></Link> 
         </Menu>
     </div>
     )
