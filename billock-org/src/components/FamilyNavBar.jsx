@@ -19,11 +19,11 @@ export default class FamilyNavBar extends Component {
     return (
     <div className='navbar-position'>
         <Menu>
-            <Link id="home" className="menu-item" to="/"><img className='circleimagerot' src={require('../images/tenor-horn.jpg')} /></Link>
             <Link to="/matt" className="menu-item"><img className="circleimage" src={require("../images/matt.jpg")} alt="Matt" /></Link>
             <Link to="/kiley" className="menu-item"><img className="circleimagerot" src={require("../images/kiley.jpg")} alt="Kiley" /></Link>
             <Link to="/luella" className="menu-item"><img className="circleimage" src={require("../images/luella.jpg")} alt="Luella" /></Link>
             <Link to="/connor" className="menu-item"><img className="circleimage" src={require("../images/connor.jpg")} alt="Connor" /></Link> 
+            <Link id="home" className="menu-item" to="/"><img className='circleimagerot' src={require('../images/tenor-horn.jpg')} /></Link>
         </Menu>
     </div>
     )
