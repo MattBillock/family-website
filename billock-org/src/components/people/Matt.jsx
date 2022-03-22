@@ -4,6 +4,7 @@ import FamilyNavBar from '../FamilyNavBar'
 import PersonalInfo from './PersonalInfo'
 import HobbyInfo from './HobbyInfo'
 import Resume from './resume'
+import '../../stylesheets/matt.sass'
 
 export default class Matt extends Component {
   constructor(props) {
@@ -32,7 +33,7 @@ export default class Matt extends Component {
     var hobbyInfoOpen = this.state.hobbyInfoOpen
     var resumeInfoOpen = this.state.resumeInfoOpen
     return (
-      <div>
+      <div className='matt-bg'>
         <FamilyNavBar />
         <div className="main-content">
           <div>
