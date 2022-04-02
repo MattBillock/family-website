@@ -61,19 +61,17 @@ export default class OtherRelated extends Component {
   }
   render() {
     const item_list = this.getData().map((item) => 
-      <li key={uuidv4()}>
-        {item['data']}
+      <div key={uuidv4()}>
+        <span className='company-location'>{item['data']}</span>
         <ul>
           {item['children'].map((child) => <li key={uuidv4()}>{child}</li>)}
         </ul>
-      </li>
+      </div>
     )
     return (
       <div>
         <h2>Other organizations and employment</h2>
-        <ul>
           {item_list}
-        </ul>
       </div>
     )
   }

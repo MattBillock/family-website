@@ -28,15 +28,19 @@ export default class Skills extends Component {
   }
   render() {
     var skills_list = this.getData().map((item => 
-      <li key={uuidv4()}>
-        {item['skill']} - {item['years']} years
-      </li>
+      <div key={uuidv4()}>
+        <li >
+          {item['skill']} - {item['years']} years
+        </li>
+      </div>
     ))
     return (
       <div>
         <h2>Skills</h2>
-        <div>
+        <div >
+          <ul>
           {skills_list}
+          </ul>
         </div>
       </div>
     )

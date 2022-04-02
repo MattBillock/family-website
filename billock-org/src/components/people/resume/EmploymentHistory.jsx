@@ -231,9 +231,9 @@ export default class EmploymentHistory extends Component {
       <div key={uuidv4()}>
         <div>
           <span className="datespan">{item['start-date']}-{item['end-date'] === undefined ? 'Present' : item['end-date']}</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;----&nbsp;
           <span className="title">{item['title']}</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;----&nbsp;
           <span className="company-location">{item['company']}, {item['location']}</span>
           &nbsp;&nbsp;&nbsp;&nbsp;
         </div>

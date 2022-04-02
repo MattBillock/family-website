@@ -11,7 +11,7 @@ export default class Education extends Component {
         'major': 'Computer Graphics and Animation (developer concentration)',
         'graduationDate': '06/2007',
         'city': 'Chicago, IL',
-        'notes': 'Graduated with distinction'
+        'notes': 'Graduated with distinction. Member of Upsilon Pi Epsilon Computer Science Honors Society'
       },
       {
         'school': 'Iowa State University',
@@ -19,24 +19,33 @@ export default class Education extends Component {
         'major': 'Computer Science',
         'graduationDate': '12/2003',
         'city': 'Ames, IA',
-        'notes': ''
+        'notes': 'Minor in Philosophy. Member of the ISUCF"V"MB, Leader of the Hockey Pep Band, Member of the ISU Karate Club, Member of the ISU Game Development Club, Member of Tau Beta Sigma'
       }
     ]);
   }
   render() {
     var education_list = this.getData().map( (item) => 
-      <li key={uuidv4()}>
+      <div key={uuidv4()}>
         <div>
-          <div><span className="degree">{item['degree']}</span> - <span className="major">{item['major']}</span></div>
-          <div><span className='school'>{item['school']}</span>, <span className='city'>{item['city']}</span></div>
-          <div><span className='notes'>{item['notes']}</span></div>
+          <span className="degree">
+            {item['degree']}
+          </span> - <span className="major">
+            {item['major']}
+          </span>
         </div>
-      </li>
+
+        <div>
+          <ul>
+          <li><div><span className='school'>{item['school']}</span>, <span className='city'>{item['city']}</span></div></li>
+          <li><div><span className='notes'>{item['notes']}</span></div></li>
+          </ul>
+        </div>
+      </div>
     );
     return (
       <div>
         <h2>Education</h2>
-        <ul> { education_list } </ul>
+        { education_list }
       </div>
     )
   }
