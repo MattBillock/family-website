@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
-import FamilyNavBar from '../FamilyNavBar'
+import '../../stylesheets/connor.sass'
 
 export default class Connor extends Component {
   render() {
     return (
-      <div>
-        <h1>Coming soon!</h1>
-        <FamilyNavBar />
+      <div className='connor-bg'>
+        <div className='main-content'>
+          <h1>Connor</h1>
+          <p>Coming soon!</p>
+        </div>
       </div>
     )
   }

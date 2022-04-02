@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
-import FamilyNavBar from '../FamilyNavBar'
+import '../../stylesheets/luella.sass'
 
 
 export default class Luella extends Component {
   render() {
     return (
-      <div>
-        <h1>Coming soon!</h1>
-        <FamilyNavBar />
+      <div className='luella-bg'>
+        <div className='main-content'>
+          <h1>Luella</h1>
+          <p>Coming soon!</p>
+        </div>
       </div>
     )
   }

@@ -20,13 +20,15 @@ export default class App extends Component {
         <div className="App-container">
           <div id="main">
             <FamilyNavBar />
-            <Routes>
-              <Route exact path='/' element={<Home />} />
-              <Route path='/matt' element={<Matt />} />
-              <Route path='/kiley' element={<Kiley />} />
-              <Route path='/luella' element={<Luella />} />
-              <Route path='/connor' element={<Connor />} />
-            </Routes>
+            <div id="pagecontent" className='content-frame'>
+              <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route path='/matt' element={<Matt />} />
+                <Route path='/kiley' element={<Kiley />} />
+                <Route path='/luella' element={<Luella />} />
+                <Route path='/connor' element={<Connor />} />
+              </Routes>
+            </div>
             <footer id="footer">
               <span className="copyright">&copy; 2021 Sparrow Court Consulting</span>
             </footer>

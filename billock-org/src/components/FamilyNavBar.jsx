@@ -1,24 +1,16 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
   Link
 } from 'react-router-dom'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import NavItem from 'react-bootstrap/NavItem'
-import NavLink from 'react-bootstrap/NavLink'
-import Container from 'react-bootstrap/Container'
-import { slide as Menu } from 'react-burger-menu'
+import { push as Menu } from 'react-burger-menu'
 
 
 export default class FamilyNavBar extends Component {
 
   render() {
     return (
-    <div className='navbar-position'>
-        <Menu>
+    <div className='menu-frame'>
+        <Menu pageWrapId={"pagecontent"} burgerButtonClassName={'burger-style'}>
             <Link to="/matt" className="menu-item"><img className="circleimage" src={require("../images/matt.jpg")} alt="Matt" /></Link>
             <Link to="/kiley" className="menu-item"><img className="circleimagerot" src={require("../images/kiley.jpg")} alt="Kiley" /></Link>
             <Link to="/luella" className="menu-item"><img className="circleimage" src={require("../images/luella.jpg")} alt="Luella" /></Link>

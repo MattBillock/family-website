@@ -17,15 +17,19 @@ export default class Matt extends Component {
   }
   setOpen(value, open) {
     switch(value) {
-      case 'resume':
-        this.setState({resumeInfoOpen: open})
-        break;
       case 'hobby':
         this.setState({hobbyInfoOpen: open})
         break;
       case 'personal':
         this.setState({personalInfoOpen: open})
         break;
+      case 'resume':
+        this.setState({resumeInfoOpen: open})
+        break;
+      default:
+        this.setState({})
+        break;
+      
     }
   }
   render() {
@@ -34,7 +38,6 @@ export default class Matt extends Component {
     var resumeInfoOpen = this.state.resumeInfoOpen
     return (
       <div className='matt-bg'>
-        <FamilyNavBar />
         <div className="main-content">
           <div>
             <h1>Matt</h1>

@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
-import FamilyNavBar from '../FamilyNavBar'
+import '../../stylesheets/kiley.sass'
+
 
 export default class Kiley extends Component {
   render() {
     return (
-      <>
-        <h1>Coming soon!</h1>
-        <FamilyNavBar />
-      </>
+      <div className='kiley-bg'>
+        <div className='main-content'>
+          <h1>Kiley</h1>
+          <p>Coming soon!</p>
+        </div>
+      </div>
     )
   }
 }

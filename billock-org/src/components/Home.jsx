@@ -9,9 +9,6 @@ export default class Home extends Component {
       <div className='bg'>
         <div className="is-preload">
           <div id="main">
-            <div>
-              <FamilyNavBar />
-            </div>
             <div className='page-title'>
               <h1>The Billock Family</h1>
               <span><h3><em>Est. 2012</em></h3></span>
