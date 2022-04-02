@@ -12,21 +12,25 @@ export default class Resume extends Component {
     var source = window.document.getElementById("resume-content")
     report.html(source, {
       callback: function (doc) {
-        doc.save('matthew-raymond-billock-resume.pdf');
+        var iframe = document.createElement('iframe')
+        iframe.setAttribute('style', 'position:absolute;right:0; top:0; bottom:0; height:100%; width:500px')
+        document.body.appendChild(iframe)
+        iframe.src = doc.output('datauristring')
       },
       x: 10,
       y: 10,
-      width: 522,
-      margin: [80,0,60,40]
+      width: 170,
+      margin: 40,
+      autoPaging: 'text',
+      filename: 'matt-billock-generated-resume.pdf'
    });
   }
-
   render() {
     return (
       <div className='resume'>
         <button onClick={this.generatePDF} type='button'>Export PDF</button>
         <div id="resume-content">
-          <h1>Matthew R Billock</h1>
+          <h1>MATTHEW R. BILLOCK</h1>
           <Skills />
           <EmploymentHistory />
           <Education />
