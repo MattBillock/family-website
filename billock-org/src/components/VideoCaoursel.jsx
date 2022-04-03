@@ -12,7 +12,8 @@ const external_links = {
   'illinois_brass_band': 'https://www.illinoisbrassband.org/',
   'glassmen': 'https://www.dci.org',
   'madison_brass_band': 'https://www.mbbweb.net/',
-  'colts': 'https://www.colts.org'
+  'colts': 'https://www.colts.org',
+  'isucfvmb': 'https://music.iastate.edu'
 }
 
 export default class VideoCarousel extends Component {
@@ -95,6 +96,12 @@ export default class VideoCarousel extends Component {
         'video_id': 'xMF9Lu35X8s',
         'type': 'video',
         'legend': 'Final run through, The Kilties Drum and Bugle Corps, Kenosha, WI, 2014. Lead Mellophone'
+      },
+      {
+        'group': 'isucfvmb',
+        'video_id': 'DIsP5gKQoIo',
+        'type': 'video',
+        'legend': 'Iowa State University Cyclone Footbal "Varisty" Marching Band, Ames, IA, 2000. 1st trumpet'
       }
     ]
   }
