@@ -13,7 +13,10 @@ const external_links = {
   'glassmen': 'https://www.dci.org',
   'madison_brass_band': 'https://www.mbbweb.net/',
   'colts': 'https://www.colts.org',
-  'isucfvmb': 'https://music.iastate.edu'
+  'isucfvmb': 'https://music.iastate.edu',
+  'pioneer': 'https://www.dci.org',
+  'sinewave': 'https://www.dca-corps.org'
+
 }
 
 export default class VideoCarousel extends Component {
@@ -108,6 +111,11 @@ export default class VideoCarousel extends Component {
         'video_id': 'gkLBnoXYI90',
         'type': 'video',
         'legend': 'Jersey Boys, Sine Wave Minicorps, Rochester, NY, 2010. Baritone'
+      },
+      {
+        'group': 'pioneer',
+        'video_id': 'y2bPNcyPX2g',
+        'legend': 'Shades of the Emerald, Pioneer Drum and Bugle Corps, Milwaukee, WI, 1995. 3rd Soprano'
       }
     ]
   }
