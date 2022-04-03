@@ -3,6 +3,19 @@ html,
 .App-container
   position: relative
   min-height: 100vh
+  margin: 0
+  height: 100%
+
+@mixin background($imgpath, $position:0 0, $repeat: no-repeat)
+    background:
+        image: url($imgpath)
+        position: 0 0
+        repeat: repeat
+        size: cover
+    width: 100%
+    min-height: 100%
+    float: left
+    background-attachment: fixed
   
 .body, .input, .select, .textarea
   color: #000
@@ -122,3 +135,8 @@ html,
   height: auto
   margin-left: auto
   margin-right: auto
+
+.footer
+  text-align: center
+  background-color: rgba(0,0,64, .75)
+  text-emphasis: strong

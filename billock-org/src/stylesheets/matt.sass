@@ -1,12 +1,3 @@
-
-@mixin background($imgpath, $position:0 0, $repeat: no-repeat)
-    background:
-        image: url($imgpath)
-        size: cover
-    position: absolute
-    /* Preserve aspet ratio */
-    min-width: 100%
-    min-height: 100%
+@import "./main.sass"
 .matt-bg
-    @include background("\\images\\matt-background.png", absolute, repeat)
-    background-attachment: fixed
+    @include background("\\images\\matt-background.png")

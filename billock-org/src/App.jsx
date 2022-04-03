@@ -32,7 +32,6 @@ export default class App extends Component {
           </div>
         
         </div>
-        <div id='gap'>?</div>
         
         <footer id="footer" className='footer'>
           <span className="copyright">&copy; 2019 - {new Date().getFullYear()} Sparrow Court Consulting</span>

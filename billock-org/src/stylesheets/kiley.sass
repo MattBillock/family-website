@@ -1,12 +1,3 @@
-
-@mixin background($imgpath, $position:0 0, $repeat: no-repeat)
-    background:
-        image: url($imgpath)
-        size: cover
-    position: absolute
-    /* Preserve aspet ratio */
-    min-width: 100%
-    min-height: 100%
+@import "./main.sass"
 .kiley-bg
     @include background("\\images\\kiley-background.jpg")
-    background-attachment: fixed
