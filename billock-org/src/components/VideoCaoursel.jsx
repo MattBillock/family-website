@@ -71,37 +71,43 @@ export default class VideoCarousel extends Component {
         'group': 'illinois_brass_band',
         'video_id': '6ltlWvz9Rl0',
         'type': 'video',
-        'legend': 'O Magnum Mysterium, The Illinois Brass Band, St Charles, IL, 2017. Solo horn'
+        'legend': 'O Magnum Mysterium, Illinois Brass Band, St Charles, IL, 2017. Solo horn'
       },
       {
         'group': 'madison_brass_band',
         'video_id': 'DRwaO7WxUTE',
         'type': 'video',
-        'legend': 'The Stars and Stripes Forever, Madison brass Band, Waupun, WI, 2012. Repiano Cornet'
+        'legend': 'The Stars and Stripes Forever, Madison Brass Band, Waupun, WI, 2012. Repiano Cornet'
       },
       {
         'group': 'glassmen',
         'video_id': 'eeT8AV_MK9M',
         'type': 'video',
-        'legend': 'The Age of Gold, The Glassmen Drum and Bugle Corps, Orlando, FL, 1997. 2nd Soprano'
+        'legend': 'The Age of Gold, Glassmen Drum and Bugle Corps, Orlando, FL, 1997. 2nd Soprano'
       },
       {
         'group': 'colts',
         'video_id': 'htbOaiLF2jk',
         'type': 'video',
-        'legend': 'Chivalry, The Colts Drum and Bugle Corps, Buffalo, NY, 2001. 3rd Baritone'
+        'legend': 'Chivalry, Colts Drum and Bugle Corps, Buffalo, NY, 2001. 3rd Baritone'
       },
       {
         'group': 'kilties',
         'video_id': 'xMF9Lu35X8s',
         'type': 'video',
-        'legend': 'Final run through, The Kilties Drum and Bugle Corps, Kenosha, WI, 2014. Lead Mellophone'
+        'legend': 'Final run through, Kilties Drum and Bugle Corps, Kenosha, WI, 2014. Lead Mellophone'
       },
       {
         'group': 'isucfvmb',
         'video_id': 'DIsP5gKQoIo',
         'type': 'video',
-        'legend': 'Iowa State University Cyclone Footbal "Varisty" Marching Band, Ames, IA, 2000. 1st trumpet'
+        'legend': 'Pregame show, Iowa State University Cyclone Footbal "Varisty" Marching Band, Ames, IA, 2000. 1st trumpet'
+      },
+      {
+        'group': 'sinewave',
+        'video_id': 'gkLBnoXYI90',
+        'type': 'video',
+        'legend': 'Jersey Boys, Sine Wave Minicorps, Rochester, NY, 2010. Baritone'
       }
     ]
   }
