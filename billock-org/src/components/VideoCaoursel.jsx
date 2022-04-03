@@ -4,10 +4,6 @@ import { Carousel } from 'react-responsive-carousel'
 import {v4 as uuidv4} from 'uuid'
 
 
-const YoutubeSlide = (url, isSelected ) => (
-  <ReactPlayer width="100%" url={url} playing={isSelected} />
-);
-
 export default class VideoCarousel extends Component {
   getData() {
     return [ 
@@ -43,26 +39,18 @@ export default class VideoCarousel extends Component {
     return `https://www.youtube.com/embed/${video_id}`
   }
   
-
-render() {
-    const customRenderItem = (item, props) => <item.type {...item.props} {...props} />;
-
-    const getVideoThumb = (videoId) => `https://img.youtube.com/vi/${videoId}/default.jpg`;
-
-    const getVideoId = (url) => url.substr('https://www.youtube.com/embed/'.length, url.length);
-
-    const customRenderThumb = (children) =>
-        children.map((item) => {
-            const videoId = getVideoId(item.props.url);
-            return <img src={getVideoThumb(videoId)} />;
-        });
-
+  getYoutubeSlide(url, isSelected) {
+    return <iframe key={uuidv4()} width="560" height="315" src={url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    //return <ReactPlayer key={uuidv4()} width="100%" url={url} playing={isSelected} />
+  }
+  
+  render() {    
     return (
-        <Carousel renderItem={customRenderItem} renderThumbs={customRenderThumb}>
+        <Carousel>
           {
-            this.getData().map((item) => <YoutubeSlide key={item['video_id']} url={this.getVideoUrl(item['video_id'])} />)
+            this.getData().map((item) => {return this.getYoutubeSlide(this.getVideoUrl(item['video_id']), false)})
           }
         </Carousel>
     );
-};
+  };
 }

@@ -1,68 +1,30 @@
 import React, { Component } from 'react'
-import { Collapse } from 'react-bootstrap'
+import { Collapse, Tab, Tabs } from 'react-bootstrap'
 import PersonalInfo from './PersonalInfo'
 import HobbyInfo from './HobbyInfo'
 import Resume from './resume'
 import '../../stylesheets/matt.sass'
 
 export default class Matt extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      personalInfoOpen:false,
-      hobbyInfoOpen: false,
-      resumeInfoOpen: false
-    }
-  }
-  setOpen(value, open) {
-    switch(value) {
-      case 'hobby':
-        this.setState({hobbyInfoOpen: open})
-        break;
-      case 'personal':
-        this.setState({personalInfoOpen: open})
-        break;
-      case 'resume':
-        this.setState({resumeInfoOpen: open})
-        break;
-      default:
-        this.setState({})
-        break;
-      
-    }
-  }
+  
   render() {
-    var personalInfoOpen = this.state.personalInfoOpen
-    var hobbyInfoOpen = this.state.hobbyInfoOpen
-    var resumeInfoOpen = this.state.resumeInfoOpen
     return (
       <div className='matt-bg'>
         <div className="main-content">
           <div>
             <h1>Matt</h1>
-            <button aria-controls='collapse-personal'
-              onClick={() => this.setOpen('personal', !personalInfoOpen)}>Personal Info</button>
-            <Collapse in={personalInfoOpen}>
-              <div id='collapse-personal'>
+            <Tabs defaultActiveKey="resume" id="matt-page-tabs" className='mb-3'>
+              <Tab eventKey='personal' title='Personal info'>
                 <PersonalInfo />
-              </div>
-            </Collapse>
-            <br />
-            <button aria-controls='collapse-hobby'
-              onClick={() => this.setOpen('hobby', !hobbyInfoOpen)}>Hobbies</button>
-            <Collapse in={hobbyInfoOpen}>
-              <div id='collapse-hobby'>
+              </Tab>
+              <Tab eventKey='music' title='Music'>
                 <HobbyInfo />
-              </div>
-            </Collapse>
-            <br />
-            <button aria-controls='collapse-resume'
-              onClick={() => this.setOpen('resume', !resumeInfoOpen)}>My resume</button>
-            <Collapse in={resumeInfoOpen}>
-              <div id='collapse-resume'>
+              </Tab>
+              <Tab eventKey='resume' title='Resume'>
                 <Resume />
-              </div>
-            </Collapse>
+              </Tab>
+            </Tabs>
+            
           </div>
         </div>
       </div>

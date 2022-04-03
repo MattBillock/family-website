@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e44d0fad.css",
-    "main.js": "/static/js/main.176e655e.js",
+    "main.js": "/static/js/main.b008073f.js",
     "static/js/498.1e3489de.chunk.js": "/static/js/498.1e3489de.chunk.js",
     "static/js/703.42230876.chunk.js": "/static/js/703.42230876.chunk.js",
     "static/js/455.043729bb.chunk.js": "/static/js/455.043729bb.chunk.js",
@@ -17,13 +17,13 @@
     "static/media/tenor-horn.jpg": "/static/media/tenor-horn.20c9d3192a2ff4b7eb3e.jpg",
     "index.html": "/index.html",
     "main.e44d0fad.css.map": "/static/css/main.e44d0fad.css.map",
-    "main.176e655e.js.map": "/static/js/main.176e655e.js.map",
+    "main.b008073f.js.map": "/static/js/main.b008073f.js.map",
     "498.1e3489de.chunk.js.map": "/static/js/498.1e3489de.chunk.js.map",
     "703.42230876.chunk.js.map": "/static/js/703.42230876.chunk.js.map",
     "455.043729bb.chunk.js.map": "/static/js/455.043729bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e44d0fad.css",
-    "static/js/main.176e655e.js"
+    "static/js/main.b008073f.js"
   ]
 }
