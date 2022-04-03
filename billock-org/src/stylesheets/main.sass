@@ -1,10 +1,16 @@
+body,
+html,
+.App-container
+  position: relative
+  min-height: 100vh
+  
 .body, .input, .select, .textarea
-    color: #000
-    font-family: 'Source Sans Pro', sans-serif
-    font-size: 15pt
-    font-weight: 300 !important
-    letter-spacing: -0.025em
-    line-height: 1.75em
+  color: #000
+  font-family: 'Source Sans Pro', sans-serif
+  font-size: 15pt
+  font-weight: 300 !important
+  letter-spacing: -0.025em
+  line-height: 1.75em
 
 .circleimage
     border-radius: 50%
@@ -93,12 +99,11 @@
 .bm-overlay 
   background: rgba(0, 0, 0, 0.3)
 
-.footer
-  background: rgba(0,0,128,120)
-  text-align: center
-  text-decoration: em
-  color: white
-  
+.player-wrapper
+  background-color: rgb(144,144,144)
+  border-style: double
+  border-radius: 5px
+
 .player-wrapper::before
   content: ""
   width: 1px
@@ -115,3 +120,5 @@
 .react-player
   width: 100%
   height: auto
+  margin-left: auto
+  margin-right: auto
