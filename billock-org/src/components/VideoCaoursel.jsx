@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactPlayer from 'react-player'
 import { Carousel } from 'react-responsive-carousel'
 import {v4 as uuidv4} from 'uuid'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 export default class VideoCarousel extends Component {
@@ -39,16 +40,34 @@ export default class VideoCarousel extends Component {
     return `https://www.youtube.com/embed/${video_id}`
   }
   
-  getYoutubeSlide(url, isSelected) {
-    return <iframe key={uuidv4()} width="560" height="315" src={url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-    //return <ReactPlayer key={uuidv4()} width="100%" url={url} playing={isSelected} />
+  getYoutubeSlide(video_id, isSelected, legend) {
+    //return <iframe key={uuidv4()} width="560" height="315" src={url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    return (
+      <div key={uuidv4()} className='player-wrapper'>
+        <ReactPlayer 
+        url={this.getVideoUrl(video_id)} 
+        id={video_id}
+        playing={isSelected} 
+        className='react-player'
+        width='90%' 
+        height='90%'
+        />
+        <h3><em>{legend}</em></h3>
+      </div>)
   }
   
   render() {    
+    const getVideoThumb = (videoId) => "https://img.youtube.com/vi/${videoId}/default.jpg"
+    const customRenderThumb = (children) => {
+      children.map((item) => {
+        const videoId = item.props.id;
+        return <img src={getVideoThumb(videoId)} alt="video thumbnail" />
+      });
+    }
     return (
-        <Carousel>
+        <Carousel infiniteLoop renderThumbs={customRenderThumb} >
           {
-            this.getData().map((item) => {return this.getYoutubeSlide(this.getVideoUrl(item['video_id']), false)})
+            this.getData().map((item) => {return this.getYoutubeSlide(item['video_id'], false, item['legend'])})
           }
         </Carousel>
     );
