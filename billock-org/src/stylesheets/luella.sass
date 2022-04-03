@@ -1,15 +1,12 @@
+
 @mixin background($imgpath, $position:0 0, $repeat: no-repeat)
     background:
         image: url($imgpath)
-        position: 0 0
-        repeat: repeat
         size: cover
-    width: 100%
-    height: 100%
-    top: 0
-    left: 0
-    right:0
-    display:block
-    float: left
+    position: absolute
+    /* Preserve aspet ratio */
+    min-width: 100%
+    min-height: 100%
 .luella-bg
     @include background("\\images\\luella-background.jpg", absolute, repeat)
+    background-attachment: fixed

@@ -2,18 +2,14 @@
 @mixin background($imgpath, $position:0 0, $repeat: no-repeat)
     background:
         image: url($imgpath)
-        //position: $position
-        repeat: $repeat
         size: cover
+    position: relative
+    /* Preserve aspet ratio */
     min-width: 100%
     min-height: 100%
-    width: 100%
-    height: auto
-    top: 0
-    left: 0
-    
 .bg
     @include background("\\images\\house.jpg")
+    background-attachment: fixed
 
 .page-title
     top: 50%
