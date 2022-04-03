@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react'
-import FamilyNavBar from './FamilyNavBar';
 import '../stylesheets/home.sass'
 
 export default class Home extends Component {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Collapse } from 'react-bootstrap'
-import FamilyNavBar from '../FamilyNavBar'
 import PersonalInfo from './PersonalInfo'
 import HobbyInfo from './HobbyInfo'
 import Resume from './resume'
