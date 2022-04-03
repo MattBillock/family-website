@@ -6,23 +6,31 @@ export default class Skills extends Component {
     return [
       {
         'skill':'Ruby development',
-        'years':11
+        'level':'Advanced'
       },
       {
         'skill':'Python development',
-        'years':5
+        'level':'Advanced'
       },
       {
         'skill':'JavaScript development',
-        'years':8
+        'level':'Intermediate'
       },
       {
         'skill':'C++ development',
-        'years':7
+        'level':'Advanced'
       },
       {
         'skill':'Agile methodologies',
-        'years':15
+        'level':'Advanced'
+      },
+      {
+        'skill':'Software architecture and design',
+        'level':'Advanced'
+      },
+      {
+        'skill': 'Engineering management and leadership',
+        'level': 'Intermediate'
       }
     ]
   }
@@ -30,7 +38,7 @@ export default class Skills extends Component {
     var skills_list = this.getData().map((item => 
       <div key={uuidv4()}>
         <li >
-          {item['skill']} - {item['years']} years
+          {item['skill']} - {item['level']}
         </li>
       </div>
     ))
