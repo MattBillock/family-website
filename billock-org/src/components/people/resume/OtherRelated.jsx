@@ -4,8 +4,16 @@ export default class OtherRelated extends Component {
   getData() {
     return [
       {
+        "data": "North American Brass Band Association",
+        "children": [
+          "Board member, 2022-Present",
+          "Tech lead, 2022-Present"
+        ]
+      },
+      {
         "data": "Chicago Brass Band",
         "children": [
+          "Board member, 2022-Present",
           "First Tenor Horn, 2019-Present"
         ]
       },

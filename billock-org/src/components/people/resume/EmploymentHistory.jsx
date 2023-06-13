@@ -6,8 +6,24 @@ export default class EmploymentHistory extends Component {
     return ([
       {
         'key':uuidv4(),
-        'start-date': 'June 2021',
+        'start-date': 'August 2022',
         'end-date': undefined,
+        'title': 'Staff Software Development Engineer',
+        'company': 'Recharge Payments',
+        'location': 'Remote',
+        'responsibilities': [
+          "Tech used: Python (Flask/SQLAlchemy), Ruby (Rails), React, Google Cloud Platform, Shopify API",
+          "Worked across multiple tech stacks in a cross-functional role with a focus on scalability and resiliency",
+          "Established a technical design process to improve predictability of delivery and reduce bugs",
+          "Worked with engineers to shepherd a complex technical workflows engine from a Redis/Sidekiq base to one built on top of Temporal and Go",
+          "Mentored multiple engineers successfully while serving as a team lead",
+          "Was routinely praised for my communication ability and professionalism"
+        ]
+      },
+      {
+        'key':uuidv4(),
+        'start-date': 'June 2021',
+        'end-date': 'April 2022',
         'title': 'Staff Software Development Engineer',
         'company': 'Recharge Payments',
         'location': 'Remote',
