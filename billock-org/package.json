@@ -41,6 +41,6 @@
     ]
   },
   "devDependencies": {
-    "ftp-deploy": "^2.3.6"
+    "ftp-deploy": "^2.4.3"
   }
 }
