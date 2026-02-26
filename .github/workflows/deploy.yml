@@ -1,29 +1,29 @@
-name: ftp-action
-on: push
+name: Build & Deploy
+on:
+  push:
+    branches: [master]
+
 jobs:
-  web-deploy:
-    name: Deploy
+  build-and-deploy:
+    name: Build & Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Get latest code
-        uses: actions/checkout@v2
-      - name: init npm
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '14'
-      - name: Sync Files
-
+          node-version: '20'
+      - name: Install & Build
+        working-directory: ./billock-org
+        run: |
+          npm ci
+          npm run build
+      - name: Deploy via SFTP
         uses: Creepios/sftp-action@v1.0.3
         with:
-          # FTP host
           host: home98969401.1and1-data.host
           port: 22
-          # FTP user
           username: ${{ secrets.FTP_USER }}
-          # FTP password
-          password:  ${{ secrets.FTP_PASSWORD }}
-          # Local directory
+          password: ${{ secrets.FTP_PASSWORD }}
           localPath: ./billock-org/build/
-          # Remote directory
           remotePath: ./billock/
           log-level: verbose
