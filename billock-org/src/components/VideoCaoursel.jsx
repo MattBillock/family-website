@@ -144,7 +144,7 @@ export default class VideoCarousel extends Component {
   }
   
   render() {    
-    const getVideoThumb = (videoId) => "https://img.youtube.com/vi/${videoId}/default.jpg"
+    const getVideoThumb = (videoId) => `https://img.youtube.com/vi/${videoId}/default.jpg`
     const customRenderThumb = (children) => {
       children.map((item) => {
         const videoId = item.props.id;

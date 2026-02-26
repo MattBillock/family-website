@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Collapse, Tab, Tabs } from 'react-bootstrap'
+import { Tab, Tabs } from 'react-bootstrap'
 import PersonalInfo from './PersonalInfo'
 import HobbyInfo from './HobbyInfo'
 import Resume from './resume'
